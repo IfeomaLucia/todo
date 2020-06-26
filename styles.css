@@ -21,54 +21,56 @@ h1{
 
 }
 
-.items{
-    position: relative;
-    
-}
 
 #itemInput {
-    /* border: 2px solid black; */
-    /* color: black; */
     padding: 14px 28px;
     font-size: 16px;
     cursor: text;
-    width: 75%;
+    width: 80%;
     float: left;
-
 }
 
 .btn {
     border: 2px solid black;
     background-color: white;
     color: black;
-    padding: 14px 28px;
+    padding: 14px 35px;
     font-size: 16px;
     cursor: pointer;
-    /* width: 20%; */
 }
 
-.btn input {
-    width: 25%;
-    float: left;
+.btn.input {
+    width: 20%;
+    padding: 14px 28px;
+    text-align: center;
 }
-.itemList{
+
+div.itemList{
     color: chocolate;
     list-style-type: none;
-    
+   
 }
 
-li {
+ul {
+    padding: 0%;
+
+}
+
+ul li {
     list-style-type: none;
-    margin-right: 10%;
+    font-size: 25px; 
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
 
+      /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-ul.todo-item {
-list-style-position: outside;
 
-}
-
-.delete{
+span.delete{
     background-color: #ff6161;
     padding: 0px 3px 0px 3px;
     color: #fff;
@@ -76,7 +78,7 @@ list-style-position: outside;
     float: right;
 }
 
-.footer-buttons {
+div.footer-buttons {
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: 20%;
 }

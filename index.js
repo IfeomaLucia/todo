@@ -25,6 +25,7 @@ function submit(e){
 function addTask(task){
   let ul = document.querySelector('ul');
   let li = document.createElement('li');
+  li.id = "task"
   li.innerHTML = `<input type="checkbox"><label>${task}</label><span class="delete">x</span>`;
   ul.appendChild(li);
   document.querySelector('.itemList').style.display = 'block';
