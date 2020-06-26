@@ -11,28 +11,26 @@
     <body>
 
         <h1>Todo list</h1>
+        
         <div class="items">
-
             <form id="itemForm" class="my-3">
                 <input type="text" id="itemInput" placeholder="E.g.Learn Vue.js">
-                <button type="submit" id="buttonInput">add item</button>
+                <button type="submit" class="btn input" id="buttonInput">add item</button>
             </form>
-
-            <div class="itemList">
-                <ul>
-                    <li><input type="checkbox"><label>Grocery Shopping</label><span class="delete">x</span></li>
-                </ul>
-            </div> 
-          
-            <div class="buttons">
-            <button type="button" id="clear-list">clear items</button>
-            <button type="button" id="save-list" >save list</button>
-            </div>
-    
         </div>
 
+        <div class="itemList">
+            <ul>
+                <li><input type="checkbox"><label>Grocery Shopping</label><span class="delete">x</span></li>
+            </ul>
+        </div> 
 
-        <script src="index.js"></script>
+    <div class="footer-buttons">
+        <button type="button" class="btn clear" id="clear-list">clear items</button>
+        <button type="button" class="btn save" id="save-list" >save list</button>
+    </div>
+
+    <script src="index.js"></script>
 
     </body>
 </html>
