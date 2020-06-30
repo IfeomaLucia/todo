@@ -11,6 +11,39 @@
     <body>
 
         <h1>Todo list</h1>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                  <h2>To Do</h2>
+
+                  <div class="form">
+                      <input type="text" class="myInput" placeholder="Bake a cake...">
+                      <button type="submit" class="btn input">Add</button>
+                  </div>
+
+                  <div class="itemList">
+                      <ul>
+                          <li id="task"><input type="checkbox"><label>Grocery Shopping</label><span class="delete">\u00D7</span></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <h2>Doing</h2>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <h2>Done</h2>
+                </div>
+              </div>
+        </div>
+        <!-- The commented code below is the original todo app created-->
+        <!-- <h1>Todo list</h1>
         
         <div class="items">
             <form id="itemForm" class="my-3">
@@ -28,9 +61,10 @@
     <div class="footer-buttons">
         <button type="button" class="btn clear" id="clear-list">clear items</button>
         <button type="button" class="btn save" id="save-list" >save list</button>
-    </div>
+        <button width="50px" onclick="(function(){alert(window.localStorage.getItem('todoList'))})()">show me the DB!</button>
+    </div> -->
 
-    <script src="index.js"></script>
+    <script src="index.js"></script> 
 
     </body>
 </html>
