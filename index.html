@@ -17,31 +17,57 @@
                 <div class="card">
                   <h2>To Do</h2>
 
-                  <div class="form">
-                      <input type="text" class="myInput" placeholder="Bake a cake...">
-                      <button type="submit" class="btn input">Add</button>
+                  <div class="form" id="add-form">
+                      <form id="itemForm">
+                            <input type="text" class="myInput" placeholder="Bake a cake...">
+                            <button type="submit" class="btn input">Add</button>
+                      </form>
                   </div>
 
-                  <div class="itemList">
-                      <ul>
-                          <li id="task"><input type="checkbox"><label>Grocery Shopping</label><span class="delete">\u00D7</span></li>
+                  <div class="itemList" id="list-todo">
+                      <ul id="ul-todo">
+                          <li id="task-todo" draggable="true"><input type="checkbox"><label>Grocery Shopping</label><span class="delete">x</span></li>
                       </ul>
                   </div>
+
                 </div>
               </div>
             
               <div class="column">
                 <div class="card">
-                  <h2>Doing</h2>
+                    <h2>Doing</h2>
+
+                    <div class="itemList" id="list-doing">
+                        <ul id="ul-doing">
+                            <li id="task-doing" draggable="true"><input type="checkbox"><label>test draggaable Doing</label><span class="delete">x</span></li>
+                        </ul>
+                    </div>
+
                 </div>
               </div>
               
               <div class="column">
                 <div class="card">
                   <h2>Done</h2>
+
+                  <div class="itemList" id="list-done">
+                        <ul id="ul-done">
+                            <li id="task-done" draggable="true"><input type="checkbox"><label>test draggable done</label><span class="delete">x</span></li>
+                        </ul>
                 </div>
               </div>
         </div>
+        </div> 
+
+
+        <div class="footer-buttons">
+            <button type="button" class="btn clear" id="clear-list">clear items</button>
+            <button type="button" class="btn save" id="save-list" >save list</button>
+            <button type="button" class="btn saved" id="saved-list" >show saved list</button>
+        </div>
+
+        <script src="index.js"></script> 
+
         <!-- The commented code below is the original todo app created-->
         <!-- <h1>Todo list</h1>
         
@@ -64,7 +90,6 @@
         <button width="50px" onclick="(function(){alert(window.localStorage.getItem('todoList'))})()">show me the DB!</button>
     </div> -->
 
-    <script src="index.js"></script> 
 
     </body>
 </html>

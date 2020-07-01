@@ -4,7 +4,7 @@
 
 body {
     /* margin-left: 25%; */
-    background-color: rgb(194, 179, 169);
+    background-color: rgb(168, 168, 194);
     height: auto;
     /* margin-right: 25%; */
 }
@@ -25,12 +25,13 @@ h1{
     float: left;
     width: 33.3333%;
     padding: 0 10px;
+    margin-bottom: 50px;
+
 }
 
-/* .row {
-    margin: 0 -5px;
-    align-content: center;
-} */
+.row {
+    margin: 0px 10px;
+}
 
 .row ::after{
     content: "";
@@ -44,8 +45,9 @@ h1{
     text-align: center;
     background-color: #f1f1f1;
     border-radius: 15px;
-    height: 300px;
+    height: 400px;
     overflow: auto;
+
 }
 
 .myInput {
@@ -59,6 +61,7 @@ h1{
 .btn {
     background-color:  #6b5b95;
     color: black;
+    border-radius: 4px;
 
 }
 
@@ -67,7 +70,59 @@ h1{
     text-align: center;
     padding-bottom: 3px;
     padding-top: 3px;
-    border-radius: 4px;
+}
+
+/* .btn.save {
+    float: right;
+}
+
+.btn.clear {
+    float: left;
+    
+}
+.btn.saved {
+    margin-right: 25%;
+    margin-right: 25%;
+} */
+
+ul {
+    padding: 0%;
+
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 16px; 
+    margin: 10px 10px 10px 0px;
+    padding: 10px; 
+    text-align: left;
+    background-color: #e3dfec;
+    border-left: 6px solid #5b5b95;
+    
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+span.delete{
+    /* background-color: #ff6161; */
+    padding: 0px 3px 0px 3px;
+    cursor: pointer;
+    float: right;
+}
+
+span.delete:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.footer-buttons {
+    margin-left: 25%;
+    margin-right: 20%;
+    
 }
 /* #itemInput {
     padding: 14px 28px;
